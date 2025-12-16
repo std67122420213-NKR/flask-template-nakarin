@@ -36,3 +36,11 @@ def favorite_sports():
     return render_template('favorite_sports.html',
                            title=title,
                            sports=sports)
+
+@app.route('/favorite/movies')
+def favorite_movies():
+    title = 'Favorite Movies Page'
+    movies = ['John Wick','Mission Impossible','Reacher','The Lord of the Rings','Harry Potter']
+    return render_template('favorite_movies.html',
+                           title=title,
+                           movies=movies)
